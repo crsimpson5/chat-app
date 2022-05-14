@@ -47,7 +47,7 @@ body {
   line-height: 1.7;
   color: var(--dull-violet-400);
 
-  background-image: url("/images/bg-image-1.svg"), url("/images/bg-image-2.svg");
+  background-image: url("images/bg-image-1.svg"), url("images/bg-image-2.svg");
   background-position: top -35rem right 50vw, bottom -40rem left 50vw;
   background-repeat: no-repeat;
   background-size: 30rem;
