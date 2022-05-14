@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="49.999527mm"
+   height="114.13947mm"
+   viewBox="0 0 49.999527 114.13947"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient7301">
+      <stop
+         style="stop-color:#8838ff;stop-opacity:1"
+         offset="0"
+         id="stop7297" />
+      <stop
+         style="stop-color:#e942ff;stop-opacity:1"
+         offset="1"
+         id="stop7299" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient7301"
+       id="linearGradient7591"
+       gradientUnits="userSpaceOnUse"
+       x1="75.629501"
+       y1="200.51231"
+       x2="143.32948"
+       y2="102.35521" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-93.100084,-96.317962)">
+    <path
+       id="path33"
+       style="opacity:1;fill:url(#linearGradient7591);fill-opacity:1;fill-rule:evenodd;stroke-width:0.25352"
+       d="m 118.09959,96.317962 c -13.80694,2.73e-4 -24.99952,11.193088 -24.999506,25.000028 v 64.13941 c -1.7e-5,13.80694 11.192566,24.99976 24.999506,25.00003 13.80714,1e-5 25.00004,-11.19289 25.00002,-25.00003 v -64.13941 c 10e-6,-13.80714 -11.19288,-25.000039 -25.00002,-25.000028 z" />
+  </g>
+</svg>

@@ -39,6 +39,17 @@ body {
   background: hsl(0, 0%, 98%);
   line-height: 1.7;
   color: var(--dull-violet-400);
+
+  background-image: url("/images/bg-image-1.svg"), url("/images/bg-image-2.svg");
+  background-position: top -35rem right 50vw, bottom -40rem left 50vw;
+  background-repeat: no-repeat;
+  background-size: 30rem;
+}
+
+@media only screen and (min-width: 64rem) {
+  body {
+    background-position: top -25rem right calc(11.5rem + 60vw), bottom -25rem left calc(11.5rem + 60vw);
+  }
 }
 
 h1,
@@ -140,31 +151,6 @@ h1 {
 
 .main-content p {
   max-width: 45ch;
-}
-
-.bg-shape {
-  --width: 30rem;
-  z-index: -10;
-  position: absolute;
-  border-radius: 100vw;
-  height: 60rem;
-  width: var(--width);
-}
-
-.bg-shape[data-type="left"] {
-  top: -27rem;
-  right: 50%;
-  background-image: radial-gradient(
-    circle at top right,
-    var(--magenta),
-    var(--violet-400)
-  );
-}
-
-.bg-shape[data-type="right"] {
-  bottom: -22rem;
-  left: 50%;
-  background: var(--violet-50);
 }
 
 /* Phone */
