@@ -23,6 +23,13 @@
   --fs-800: 2rem;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -48,7 +55,8 @@ body {
 
 @media only screen and (min-width: 64rem) {
   body {
-    background-position: top -25rem right calc(11.5rem + 60vw), bottom -25rem left calc(11.5rem + 60vw);
+    background-position: top -25rem right calc(16rem + 55vw),
+      bottom -25rem left calc(16rem + 55vw);
   }
 }
 
