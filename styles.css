@@ -1,22 +1,20 @@
 :root {
-  --gray-blue: hsl(206, 6%, 79%);
-  --gray-violet: hsl(270, 7%, 64%);
+  --violet-50: hsl(270, 20%, 96%);
+  --violet-100: hsl(272, 38%, 92%);
+  --violet-200: hsl(276, 100%, 81%);
+  --violet-400: hsl(264, 100%, 61%);
 
-  --violet-lighter: hsl(276, 100%, 81%);
-  --violet-light: hsl(276, 55%, 52%);
-  --violet-dark: hsl(271, 15%, 43%);
-  --violet-darker: hsl(271, 36%, 24%);
+  --dull-violet-200: hsl(270, 7%, 64%);
+  --dull-violet-400: hsl(271, 15%, 43%);
+  --dull-violet-600: hsl(271, 36%, 24%);
 
+  --purple: hsl(276, 55%, 52%);
   --magenta: hsl(293, 100%, 63%);
-  --violet: hsl(264, 100%, 61%);
+  --light-magenta: hsl(289, 100%, 72%);
 
   --white: hsl(0, 0%, 100%);
-  --light-violet: hsl(272, 38%, 92%);
-  --light-light-gray: hsl(264, 24%, 96%);
-  --light-gray: hsl(270, 20%, 96%);
+  --gray-blue: hsl(206, 6%, 79%);
   --med-gray: hsl(0, 0%, 70%);
-  --dark-violet: hsl(271, 36%, 24%);
-  --light-magenta: hsl(289, 100%, 72%);
 
   --fs-200: 0.5rem;
   --fs-300: 0.75rem;
@@ -40,7 +38,7 @@ body {
   position: relative;
   background: hsl(0, 0%, 98%);
   line-height: 1.7;
-  color: var(--violet-dark);
+  color: var(--dull-violet-400);
 }
 
 h1,
@@ -56,7 +54,7 @@ img {
 
 h1 {
   line-height: 1.1;
-  color: var(--violet-darker);
+  color: var(--dull-violet-600);
   font-weight: 600;
   font-size: 2.375rem;
 }
@@ -118,7 +116,7 @@ h1 {
 }
 
 .color-violet-lighter {
-  color: var(--violet-lighter);
+  color: var(--violet-200);
 }
 
 /* Components */
@@ -159,14 +157,14 @@ h1 {
   background-image: radial-gradient(
     circle at top right,
     var(--magenta),
-    var(--violet)
+    var(--violet-400)
   );
 }
 
 .bg-shape[data-type="right"] {
   bottom: -22rem;
   left: 50%;
-  background: var(--light-light-gray);
+  background: var(--violet-50);
 }
 
 /* Phone */
@@ -178,7 +176,7 @@ h1 {
   position: relative;
   max-width: 16.5rem;
   overflow: hidden;
-  background: var(--light-light-gray);
+  background: var(--violet-50);
   border: 0.75rem solid var(--white);
   border-radius: 2rem;
   line-height: 1.5;
@@ -200,7 +198,11 @@ h1 {
   padding-inline: calc(var(--padding) * 2);
   padding-top: calc(var(--padding) + var(--notch-height));
   padding-bottom: var(--padding);
-  background-image: linear-gradient(to right, var(--violet), var(--magenta));
+  background-image: linear-gradient(
+    to right,
+    var(--violet-400),
+    var(--magenta)
+  );
   border-radius: 0.5rem;
   color: var(--white);
 }
@@ -230,8 +232,8 @@ h1 {
   border-radius: var(--br-2);
   border-bottom-left-radius: var(--br-1);
   padding: calc(var(--padding) * 3 / 4) var(--padding);
-  background: var(--light-violet);
-  color: var(--violet-light);
+  background: var(--violet-100);
+  color: var(--purple);
   font-weight: 500;
 }
 
@@ -240,16 +242,20 @@ h1 {
   border-bottom-left-radius: var(--br-2);
   border-bottom-right-radius: var(--br-1);
   background: var(--white);
-  color: var(--violet-dark);
+  color: var(--dull-violet-400);
   box-shadow: 0 4px 8px -4px rgb(0 0 0 / 0.1);
 }
 
 .phone__message[data-type="gradient"] {
   width: auto;
   max-width: 75%;
-  background-image: linear-gradient(to right, var(--magenta), var(--violet));
+  background-image: linear-gradient(
+    to right,
+    var(--magenta),
+    var(--violet-400)
+  );
   padding-right: calc(var(--padding) * 2);
-  color: var(--light-violet);
+  color: var(--violet-100);
   font-weight: 400;
 }
 
@@ -307,7 +313,7 @@ h1 {
   right: 0.375rem;
   top: 0.375rem;
   border-radius: 100px;
-  background: var(--dark-violet);
+  background: var(--dull-violet-600);
 }
 
 .arrow {
@@ -326,7 +332,7 @@ h1 {
   content: "";
   width: var(--width);
   height: 3px;
-  background: var(--light-gray);
+  background: var(--violet-50);
   top: 50%;
   left: 50%;
   border-radius: 1rem;
@@ -361,7 +367,7 @@ h1 {
 .kebab::after {
   width: 3px;
   aspect-ratio: 1;
-  background: var(--light-gray);
+  background: var(--violet-50);
   border-radius: 10px;
 }
 
@@ -395,11 +401,11 @@ h1 {
 .footer a {
   color: currentColor;
   text-underline-offset: 0.125em;
-  text-decoration-color: var(--violet-lighter);
+  text-decoration-color: var(--violet-200);
 }
 
 .footer a:hover {
-  color: var(--violet-light);
+  color: var(--purple);
 }
 
 @media only screen and (min-width: 64rem) {
@@ -419,12 +425,12 @@ h1 {
     place-self: center end;
   }
 
-  .bg-shape[data-type="left"]  {
+  .bg-shape[data-type="left"] {
     top: -16rem;
     left: 0;
     transform: translateX(-50%);
   }
-  .bg-shape[data-type="right"]  {
+  .bg-shape[data-type="right"] {
     left: unset;
     right: 0;
     transform: translateX(50%);
