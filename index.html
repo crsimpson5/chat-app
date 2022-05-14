@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Chat App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-grid">
+      <!-- Phone -->
+      <div class="bg-shape" data-type="left"></div>
+      <!-- <div class="bg-shape" data-type="right"></div> -->
+      <aside class="phone fs-200">
+        <div class="phone__top flex items-center" style="--gap: 0.5rem">
+          <span class="arrow" data-type="back"></span>
+          <img class="phone__avatar" src="images/avatar.jpg" alt="" />
+          <h2 class="fs-300 fw-500">
+            <span>Samuel Green</span>
+            <span class="d-block fs-200 fw-400 color-violet-lighter"
+              >Available to Walk</span
+            >
+          </h2>
+          <span class="kebab push-right"></span>
+        </div>
+        <div class="phone__main">
+          <div class="flow">
+            <p class="phone__message">
+              That sounds great. I’d be happy with that.
+            </p>
+            <p class="phone__message">
+              Could you send over some pictures of your dog, please?
+            </p>
+          </div>
+          <div class="flow">
+            <div class="flex justify-end mt-2">
+              <img class="phone__img" src="images/dog-image-1.jpg" alt="" />
+              <img class="phone__img" src="images/dog-image-2.jpg" alt="" />
+              <img class="phone__img" src="images/dog-image-3.jpg" alt="" />
+            </div>
+            <p class="phone__message" data-direction="right">
+              Here are a few pictures. She’s a happy girl!
+            </p>
+            <div class="animate" data-direction="right">
+              <p class="phone__message" data-direction="right">
+                Can you make it?
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <div class="animate">
+              <p class="phone__message mt-2">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+            <div class="animate">
+              <div
+                class="phone__message flex items-center mt-1"
+                data-type="gradient"
+              >
+                <span class="phone__radio"></span>
+                <p>30 minute walk</p>
+                <span class="push-right fs-350 fw-600">$29</span>
+              </div>
+            </div>
+            <div class="animate">
+              <div
+                class="phone__message flex items-center mt-1"
+                data-type="gradient"
+                data-animate="true"
+              >
+                <span class="phone__radio"></span>
+                <p>1 hour walk</p>
+                <span class="push-right fs-350 fw-600">$49</span>
+              </div>
+            </div>
+          </div>
+          <div class="phone__input mt-2">
+            Type a message…
+            <span class="phone__send-btn">
+              <span class="arrow"></span>
+            </span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="main-content flow" style="--flow-space: 1.5em">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </main>
+    </div>
+
+    <footer class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor </a
+      >. Coded by
+      <a href="https://github.com/crsimpson5">Curtis&nbsp;Simpson</a>.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
